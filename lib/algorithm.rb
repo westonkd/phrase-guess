@@ -30,6 +30,7 @@ module Genetic
           mut_prop = rand(0.0..1.0)
           child = g.mutate(child) if (mut_prop < 0.3)
 
+          # Add child to the next generation
           next_gen << child
         end
 
